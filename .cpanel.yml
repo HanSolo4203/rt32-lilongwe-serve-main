@@ -1,5 +1,13 @@
-yaml---
+---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/username/public_html/
+    - export DEPLOYPATH=/home2/wgbyshte/public_html/website_e35fe4e8
     - /bin/cp -R * $DEPLOYPATH
+    - find $DEPLOYPATH -name "*.html" -exec chmod 644 {} \;
+    - find $DEPLOYPATH -name "*.css" -exec chmod 644 {} \;
+    - find $DEPLOYPATH -name "*.js" -exec chmod 644 {} \;
+    - find $DEPLOYPATH -name "*.png" -exec chmod 644 {} \;
+    - find $DEPLOYPATH -name "*.jpg" -exec chmod 644 {} \;
+    - find $DEPLOYPATH -name "*.jpeg" -exec chmod 644 {} \;
+    - find $DEPLOYPATH -name "*.gif" -exec chmod 644 {} \;
+    - find $DEPLOYPATH -type d -exec chmod 755 {} \;
