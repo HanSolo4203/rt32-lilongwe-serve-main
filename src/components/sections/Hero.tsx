@@ -28,7 +28,7 @@ const Hero = () => {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Round Table<br />
+            RT<br />
             <span className="text-malawi-green">Lilongwe 32</span>
           </h1>
           
